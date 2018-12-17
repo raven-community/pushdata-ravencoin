@@ -1,6 +1,6 @@
 {
   "name": "pushdata-ravencoin",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "encode/decode value as ravencoin OP_PUSHDATA integer",
   "keywords": [
     "push",
