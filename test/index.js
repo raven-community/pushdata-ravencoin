@@ -9,7 +9,7 @@ fixtures.valid.forEach(function (f) {
     var size = pushdata.encodingLength(f.dec)
     t.strictEqual(size, f.hex.length / 2)
 
-    var buffer = new Buffer(f.hex, 'hex')
+    var buffer = new Buffer.from(f.hex, 'hex')  // eslint-disable-line
     var d = pushdata.decode(buffer, 0)
 
     t.strictEqual(d.opcode, fopcode)
@@ -26,7 +26,7 @@ fixtures.invalid.forEach(function (f) {
   tape('Invalid for ' + f.description, function (t) {
     t.plan(1)
 
-    var buffer = new Buffer(f.hex, 'hex')
+    var buffer = new Buffer.from(f.hex, 'hex')  // eslint-disable-line
     var n = pushdata.decode(buffer, 0)
     t.strictEqual(n, null)
   })
