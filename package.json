@@ -1,6 +1,6 @@
 {
   "name": "pushdata-ravencoin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "encode/decode value as ravencoin OP_PUSHDATA integer",
   "keywords": [
     "push",
@@ -43,6 +43,6 @@
     "tape": "^4.5.1"
   },
   "dependencies": {
-    "ravencoin-ops": "github:raven-community/ravencoin-ops#master"
+    "ravencoin-ops": "^1.0.0"
   }
 }
